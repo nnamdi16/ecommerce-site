@@ -3,7 +3,11 @@ import styled from 'styled-components';
 
 export default class Card extends Component {
 	render() {
-		return <div className="card" />;
+		return (
+			<div className="card">
+				<FlexCard />
+			</div>
+		);
 	}
 }
 
