@@ -7,11 +7,7 @@ export default class Card extends Component {
 			<div className="card">
 				<FlexCard>
 					<header>New Arrival</header>
-					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, odio voluptatum qui deserunt voluptate
-						fugit pariatur cum asperiores aut nemo laborum autem explicabo laboriosam reiciendis cumque consequuntur hic
-						tempora deleniti!
-					</p>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 				</FlexCard>
 			</div>
 		);
@@ -19,13 +15,19 @@ export default class Card extends Component {
 }
 
 const FlexCard = styled.div`
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	box-sizing: border-box;
+	box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.7);
 	transition: 0.3s;
-	border-radius: 5px;
-	width: 60rem;
+	border-radius: 6px;
+	margin: 1em 1em;
+	animation: scl 0.5s ease-in-out;
+	transform-origin: left center;
+	background-color: #fff;
+	width: 80rem;
 	height: 30rem;
 
-	&::hover {
-		box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+	:hover {
+		box-shadow: 7px 7px 15px 2px rgba(0, 0, 0, 0.5);
+		transition: box-shadow 0.3s ease-in;
 	}
 `;
