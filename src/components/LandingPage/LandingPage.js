@@ -64,35 +64,27 @@ export default class LandingPage extends Component {
 						<div className="banner">
 							<img src={banner} alt="Banner" />
 						</div>
+					</div>
+				</div>
+				<div className="ecommerce-discount">
+					<div className="summer-discount">
+						<p>20% off</p>
+					</div>
 
-						{/* <FlexCard />
-					<div className='products-card'></div> */}
+					<div className="summer-collection">
+						<p>Summer Collection</p>
 					</div>
-					<div className="advert-layout">
-						<div className="ecommerce-discount">
-							<div className="ecommerce-discount-side">
-								<div className="summer-discount">
-									<p>20% off</p>
-								</div>
-							</div>
-							<div className="summer-collection">
-								<p>Summer Collection</p>
-							</div>
-							<div className="summer-date">
-								<p>only on june 18</p>
-							</div>
-							<div className="summer-button">
-								<button class="btn-overlay">Read More</button>
-							</div>
-						</div>
+					<div className="summer-date">
+						<p>only on june 18</p>
 					</div>
+					<div className="summer-button">
+						<button class="btn-overlay">Read More</button>
+					</div>
+				</div>
+				<div className="product-layout">
+					<Card />
 				</div>
 			</div>
 		);
 	}
 }
-
-// const FlexCard = styled(Card)`
-// 	position: absolute;
-// 	top: -30rem;
-// `;
